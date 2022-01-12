@@ -1,5 +1,5 @@
 # Personal-Java-Database
-Functional database created from scratch using Java. This database uses the SQL syntax to create and insert values into a table, implementing a web connection using socket programming, a simple query parsing mechanism, and a simple pager to store the data with associated meta-data
+A functional relational database created from scratch using Java. This database uses the SQL syntax to create and insert values into a table, implementing a web connection using socket programming, a simple query parsing mechanism, and a simple pager to store the data with associated meta-data
 
 This program to house data in a database similar to MySQL or SQLLite was tested using JUnit testing in the file DBTest.java.
 Type in the ip address in Connection.java that corresponds to where you are running the database-server.
