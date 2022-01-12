@@ -5,14 +5,14 @@ This program to house data in a database similar to MySQL or SQLLite was tested 
 Type in the ip address in Connection.java that corresponds to where you are running the database-server.
 
 To run program install the files and run the Controller.java 
-
-<pre> Type javac ./Controller.java followed by ./java Controller <pre> 
-
+```
+Type javac ./Controller.java followed by ./java Controller 
+```
 This will run the database-server connection side of the program. 
 
 To test out querying, run Connection.java
-
-<pre> Type javac ./Connection.java followed by ./java Connection <pre> 
-
+```
+ Type javac ./Connection.java followed by ./java Connection
+```
 After the client has connected to the server the client can query by creating a table or inserting information, for example
 "CREATE TABLE chat ( INTEGER id DOUBLE people STRING data )" or "INSERT INTO TABLE chat ( people d data s ) VALUES ( 100 TestingOut )"
