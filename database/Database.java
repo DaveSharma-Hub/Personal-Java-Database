@@ -15,7 +15,7 @@ public class Database {
 	
 	public void persistence() {
 		try {
-			FileOutputStream fileOut = new FileOutputStream("C:\\Users\\Daves\\eclipse-workspace\\database\\src\\database\\persistence\\name.ser");
+			FileOutputStream fileOut = new FileOutputStream("persistence\\name.ser");
 			ObjectOutputStream out = new ObjectOutputStream(fileOut);
 			
 			out.writeObject(tableName);
@@ -25,7 +25,7 @@ public class Database {
 	        System.out.printf("Serialized data is saved in name.ser");
 			
 	               
-	        FileOutputStream fileOut2 = new FileOutputStream("C:\\Users\\Daves\\eclipse-workspace\\database\\src\\database\\persistence\\data.ser");
+	        FileOutputStream fileOut2 = new FileOutputStream("persistence\\data.ser");
 			ObjectOutputStream out2 = new ObjectOutputStream(fileOut2);
 
 			out2.writeObject(tables);
@@ -39,7 +39,7 @@ public class Database {
 		}
 	}
 	
-	public boolean dbQuerry(String arguments[]) {// ,String arguments2[]) {
+	public boolean dbQuerry(String arguments[]) {
 		
 	if(arguments[0].equals("CREATE") && arguments[1].equals("TABLE")) {
 		try {
