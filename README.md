@@ -6,13 +6,18 @@ Type in the ip address in Connection.java that corresponds to where you are runn
 
 To run program install the files and run the Controller.java 
 ```
-Type javac ./Controller.java followed by ./java Controller 
+Type javac Controller.java followed by java Controller 
 ```
 This will run the database-server connection side of the program. 
 
 To test out querying, run Connection.java
 ```
- Type javac ./Connection.java followed by ./java Connection
+ Type javac Connection.java followed by java Connection
 ```
 After the client has connected to the server the client can query by creating a table or inserting information, for example
 "CREATE TABLE chat ( INTEGER id DOUBLE people STRING data )" or "INSERT INTO TABLE chat ( people d data s ) VALUES ( 100 TestingOut )"
+
+To run the JUnit test, simply run the DBTest.java file by first uncommenting the public access modifier and commenting the private access modifier in Data.java
+```
+ Type javac DBTest.java followed by java DBTest
+```
